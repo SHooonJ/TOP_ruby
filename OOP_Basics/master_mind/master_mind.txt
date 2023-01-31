@@ -1,0 +1,34 @@
+make board
+    make 11 rows
+        10 rows of (guess row)
+            4 colors
+            4 pegs
+        1 row of (key row)
+            4 colors
+    
+    enter 4 colors
+        mastermind enter into key row
+        player enter into current guess row
+            check if guesser made all guesses
+    
+    check if guess matches key 
+        no = mastermind update pegs 
+        yes = guesser wins 
+
+make colors
+    make 6 colors - red blue green yellow orange pink 
+
+make pegs
+    make 2 colors - black white
+
+make Mastermind 
+    ask to create the key
+        enter 4 colors into board
+    update pegs
+        compare key to guess
+            index and color matches = black
+            guess color include key = white 
+
+make Guesser
+    ask to make a guess
+        enter 4 colors into board
